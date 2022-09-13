@@ -1,0 +1,40 @@
+:root {
+    --darkCyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayishBlue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+body {
+    background: var(--cream);
+    min-height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    display: flex;
+    background: var(--white);
+    height: 450px;
+    width: 600px;
+}
+.product-image {
+    flex: 1;
+}
+.right-section {
+    background: var(--white);
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-left: 5%;
+}
+.price {
+    display: flex;
+}
+
+
