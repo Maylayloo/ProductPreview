@@ -7,6 +7,23 @@
     --darkGrayishBlue: hsl(228, 12%, 48%);
     --white: hsl(0, 0%, 100%);
 }
+* {
+    font-family: 'Fraunces', sans-serif;
+}
+h1{
+    color: var(--veryDarkBlue);
+    line-height: 32px
+}
+p, span {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--darkGrayishBlue);
+}
+
+span {
+    letter-spacing: 5px;
+    font-size: 12px;
+    margin-bottom: -15px;
+}
 body {
     background: var(--cream);
     min-height: 95vh;
@@ -14,11 +31,22 @@ body {
     justify-content: center;
     align-items: center;
 }
+p {
+    font-size: 14px;
+}
+.description {
+    line-height: 22px;
+    margin-top: -10px;
+    margin-bottom: 0;
+}
 .card {
     display: flex;
     background: var(--white);
     height: 450px;
     width: 600px;
+    margin: 32px;
+    border-radius: 16px;
+    overflow: auto;
 }
 .product-image {
     flex: 1;
@@ -31,10 +59,42 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
-    margin-left: 5%;
+    margin: 0 5%;
 }
 .price {
     display: flex;
+    align-items: center;
 }
-
-
+.add-to-card {
+    border: none;
+    background: var(--darkCyan);
+    color: var(--white);
+    padding: 12px 29%;
+    margin-bottom: 12px;
+    display: flex;
+    border-radius: 7px;
+    font-family: 'Montserrat', sans-serif;
+    white-space: nowrap;
+}
+.icon {
+    margin-right: 12px;
+}
+span {
+    margin-top: 10px;
+}
+.discount {
+    font-family: 'Fraunces', sans-serif;
+    color: var(--darkCyan);
+    font-size: 24px;
+}
+.old-price {
+    margin-left: 20px;
+    text-decoration: line-through;
+}
+.add-to-card:hover {
+    cursor: pointer;
+    background: hsl(158, 37%, 25%);
+}
+.add-to-card:active {
+    background: hsl(159, 38%, 21%);
+}
